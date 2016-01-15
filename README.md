@@ -11,10 +11,10 @@ The purpose of this project is to show a working example that has gotten around 
 
 ## Caveats
 * **No "Host" Concept** - This is for client/server type games. The single player version of the game will always go through the network (even if it's just localhost). Not great for making a mostly single player game with network capabilities.
-* **No network Transforms** - Though this technique does not rule them out, I find the network transforms inconsistent and ambiguous - magic - so this example avoids them.
+* **No Network Transforms** - Though this technique does not rule them out, I find the network transforms inconsistent and ambiguous - magic - so this example avoids them.
 
 ## Running the Example
-In the example scene, we have **client** and **server** top level game objects. These both for run together for testing purposes but don't need to be. 
+In the example scene, we have **client** and **server** top level game objects. These both run together for testing purposes but don't need to be. 
 To take a look at them running individually, simply disable respective top level game object and build. Make sure you have exactly one server while running multiple builds. :)
 
 The example contains a red capsule running around randomly. This is an npc example completely controlled by the server. The green capsule is a player. The objects movement is sync'd with the server but there is no movement prediction - this was for simplicity.
